@@ -1,0 +1,148 @@
+GenericEntity : "{C95E11C60810F432}Prefabs/Items/Core/Item_Base.et" {
+ ID "508AB2013EEE1E00"
+ components {
+  InventoryItemComponent "{5222EB4D0C73006B}" {
+   Attributes SCR_ItemAttributeCollection "{5222EB4D0A2B466B}" {
+    ItemDisplayName UIInfo "{5222EB4D07D865FA}" {
+     Name "#MCF-Item_Laptop"
+    }
+    ItemPhysAttributes ItemPhysicalAttributes PhysicalAttributes {
+     Weight 0.15
+     SizeSetupStrategy Manual
+     ItemDimensions 1 1 1
+     ItemVolume 1
+     DimensionScaler 1
+    }
+    CustomAttributes {
+     PreviewRenderAttributes "{6A7816B7C8223355}" {
+      CameraOrbitAngles 55 0 0
+      CameraDistanceToItem 0.62
+      ItemRenderRotation 0 0 0
+      LodModel 1
+     }
+    }
+    m_Size SLOT_1x1
+    m_SlotType SLOT_LOADOUT_STORAGE
+   }
+  }
+  MCF_Devices_LockComponent "{6A7816B7C8223346}" {
+   m_bSecured 1
+   m_iDifficulty 2
+   m_sBreakInVerb "Break in"
+  }
+  MCF_Devices_StowChildrenComponent "{6A7816B7C8223344}" {
+  }
+  MCF_Intel_CarrierComponent "{6A7816B7C8223343}" {
+   m_sDeviceName "Field laptop"
+   m_eView LAPTOP
+   m_sActionVerb "Use"
+   m_sProfileId "field_laptop"
+   m_aEntries {
+    MCF_Intel_Entry "{6A7816B7C822334E}" {
+     m_sHeading "Consignment manifest"
+     m_sTimestamp "12 MAR"
+     m_sBody "Four crates, marked as agricultural machinery. Weights do not match the paperwork. Signed for at the mill by somebody whose name is not on the roster."
+    }
+    MCF_Intel_Entry "{6A7816B7C822334D}" {
+     m_sHeading "Route sheet"
+     m_sTimestamp "13 MAR"
+     m_sBody "River road after dark, no lights past the bridge. Second driver waits at the quarry and takes it from there."
+    }
+   }
+   m_sPreviewPrefab "{6A1C4F0B39D2D090}Prefabs/MCF_Intel_Laptop_Preview.et"
+   m_vPreviewSize 0.36 0.351 0.227
+  }
+  MeshObject "{6A7816B7C822334A}" {
+   Object "{45F5FEABF5F2BF90}Assets/Props/Intel/Laptop/Laptop_Body.xob"
+  }
+  RigidBody "{6A7816B7C8223349}" {
+   Mass 0.15
+   LinearDamping 0.5
+   AngularDamping 0.5
+   ModelGeometry 1
+  }
+  SCR_EditableEntityComponent "{6A1C4F0B39D2D03A}" : "{996046FE206C699A}Prefabs/Editor/Components/Default_SCR_EditableEntityComponent.ct" {
+   m_EntityType GENERIC
+   m_UIInfo SCR_EditableEntityUIInfo "{6A7816B7C8223335}" {
+    Name "#MCF-Editable_Laptop"
+    m_Image "{35591EAEA460956A}UI/Textures/EditorPreviews/MCF_preview_intel.edds"
+    m_aAuthoredLabels {
+     ENTITYTYPE_OBJECT CONTENT_MODDED
+    }
+   }
+  }
+  ActionsManagerComponent "{508AB5952B584B2E}" {
+   ActionContexts {
+    UserActionContext "{508AC2ABEC97066C}" {
+     Radius 0.35
+    }
+   }
+   additionalActions {
+    MCF_Intel_ReadAction "{6A7816B7C822333F}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{6A7816B7C822333D}" {
+      Name "#MCF-Action_Use"
+     }
+     VisibilityRange 3
+     Duration 2
+    }
+   }
+  }
+ }
+ {
+  GenericEntity {
+   ID "6A7816B7C8223364"
+   components {
+    DoorComponent "{6A7816B7C822331A}" {
+     DoorAction SCR_DoorUserAction "{6A7816B7C8223307}" {
+      ParentContextList {
+       "SCR_DoorUserAction"
+      }
+      UIInfo SCR_ActionUIInfo "{6A7816B7C8223306}" {
+       m_sIconName "open-door"
+      }
+     }
+     OpenTime 1
+     DoorAnimationType WholeEntity
+     AngleRange 117
+     ClosedAngle 0
+     InitialAngle 0
+    }
+    MCF_Core_ScreenSurface "{6A7816B7C8223304}" {
+     m_sLayout "{6A50E40BA3B95000}UI/layouts/MCF_Core/MCF_Core_Surface.layout"
+     m_fActivationDistance 10
+     m_fFadeBand 2
+     m_iFramesPerSecond 6
+     m_fResolutionScale 0.5
+     m_sContentLayout "{6A1C4F0B39E00000}UI/layouts/MCF/MCF_IntelDesktop.layout"
+     m_fSurfaceWidth 1024
+     m_fSurfaceHeight 640
+    }
+    MCF_Device_ScreenComponent "{6A7816B7C8223302}" {
+    }
+    MeshObject "{6A7816B7C8223301}" {
+     Object "{CE30CC6B7543D9DA}Assets/Props/Intel/Laptop/LaptopLid.xob"
+    }
+    ActionsManagerComponent "{6A7816B7C822330C}" {
+     ActionContexts {
+      UserActionContext "{6A7816B7C822330A}" {
+       ContextName "SCR_DoorUserAction"
+       Position PointInfo "{6A7816B7C8223308}" {
+        Offset -0.002 -0.165 0.114
+       }
+       Radius 0.3
+      }
+     }
+    }
+    RplComponent "{6A7816B7C82233F5}" {
+    }
+    Hierarchy "{6A7816B7C82233F2}" {
+    }
+   }
+   coords 0.165 0.023 0.113
+   angles 0 0 90
+  }
+ }
+}

@@ -1,0 +1,43 @@
+GenericEntity : "{10C26F96EF7A8CF5}Prefabs/Props/Core/Props_Base.et" {
+ ID "F0DBA538AC2A0552"
+ components {
+  MeshObject "{5872F0EB7FA40561}" {
+   Object "{CD1CAAD3EFC0BE21}Assets/Props/Crates/CrateWooden_01/CrateWooden_01.xob"
+   LODFactors {
+    80 40 2 1 1
+   }
+  }
+  RigidBody "{5872F0EB7DFB5A9D}" {
+   Mass 20
+   CenterOfMass 0 0.5 0
+   ResponseIndex "SmallMomentum"
+   ModelGeometry 1
+   Static 1
+  }
+  SCR_DestructionMultiPhaseComponent "{6684B114DDC8D314}" : "{76DA308CC9E2AB84}Prefabs/Props/Core/DestructionMultiPhase_Base.ct" {
+   Enabled 1
+   m_fBaseHealth 500
+   m_fDamageThresholdMaximum 8000
+   m_bDestroyChildrenWhenDestroyed 1
+   m_DestroySpawnObjects {
+    SCR_DebrisSpawnable "{6684B114FC1CC46E}" : "{38A75EBDDCB8B715}Configs/Destruction/MultiphaseDestruction/FX_Debris/FX_Debris_Wood_Planks_Small.conf" {
+     m_ModelPrefabs {
+      "{AE52859657A4FAA8}Assets/Props/Crates/CrateWooden_01/Dst/CrateWooden_01_dst_01.xob" "{374C3C0F4A43CB38}Assets/Props/Crates/CrateWooden_01/Dst/CrateWooden_01_dst_02.xob" "{40465487BEE12448}Assets/Props/Crates/CrateWooden_01/Dst/CrateWooden_01_dst_03.xob" "{4781AED6D8679E8B}Assets/Props/Crates/CrateWooden_01/Dst/CrateWooden_01_dst_04.xob" "{308BC65E2CC571FB}Assets/Props/Crates/CrateWooden_01/Dst/CrateWooden_01_dst_05.xob" "{A9957FC73122406B}Assets/Props/Crates/CrateWooden_01/Dst/CrateWooden_01_dst_06.xob" "{DE9F174FC580AF1B}Assets/Props/Crates/CrateWooden_01/Dst/CrateWooden_01_dst_07.xob"
+     }
+     m_bUseMaterialsFromParent 1
+     m_fMass 0.5
+    }
+    SCR_ParticleSpawnable "{6A7816A8E8DB05D2}" {
+     m_Particle "{C436A8D33CE1AA4E}Particles/Props/Dest_Prop_Wood_Small.ptc"
+     m_bAtCenter 0
+     m_bDirectional 0
+    }
+   }
+   m_eMaterialSoundType BREAK_WOOD_SOLID
+  }
+  RplComponent "{6684B114DF44BF56}" : "{3B686EF5E3C610B9}Prefabs/Props/Core/DestructionMultiPhase_Rpl_Base.ct" {
+   Enabled 1
+  }
+ }
+ coords 1262.716 32.001 2826.402
+}

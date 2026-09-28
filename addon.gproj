@@ -1,0 +1,8 @@
+GameProject {
+ ID "MCFDesktopComputer"
+ GUID "6A77614E863449B0"
+ TITLE "MCF Desktop Computer"
+ Dependencies {
+  "6A50E40BA3B94B03" "58D0FB3206B6F859"
+ }
+}

@@ -1,0 +1,37 @@
+GenericEntity {
+ ID "6A776149C8BDA2DB"
+ components {
+  MCF_Devices_LockComponent "{6A7816BE797700AD}" {
+   m_bSecured 0
+  }
+  MCF_Intel_CarrierComponent "{6A776149881E023E}" {
+   m_sDeviceName "Desktop Computer"
+   m_eView LAPTOP
+   m_sActionVerb "Use"
+  }
+  MeshObject "{6A7761486D2D4AA0}" {
+   Object "{68DFB6B68A281A6A}Assets/Old-Computer.xob"
+  }
+  SCR_EditableEntityComponent "{6A7816BDE98EF8E6}" {
+   m_UIInfo SCR_EditableEntityUIInfo "{6A7816B707DB1179}" {
+    Name "PC-Training (Spagistan)"
+    Icon "{35591EAEA460956A}UI/Textures/EditorPreviews/MCF_preview_intel.edds"
+    m_sFaction "SPAG"
+    m_aAuthoredLabels {
+     ENTITYTYPE_OBJECT CONTENT_MODDED
+    }
+   }
+   m_Flags 769
+  }
+  ActionsManagerComponent "{6A7816BC3F39F1CC}" {
+   additionalActions {
+    MCF_Intel_ReadAction "{6A7816BDCB98E342}" {
+     ActionTitle "Use computer"
+     VisibilityRange 0.4
+     Duration 1
+    }
+   }
+  }
+ }
+ coords 2.89 3.625 3.196
+}

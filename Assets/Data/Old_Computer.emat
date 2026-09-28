@@ -1,0 +1,17 @@
+MatPBRMulti {
+ GlobalLayerNormalPower 2
+ BentNormalMode Texture
+ BentNormalMap "{B05914194C695D63}Assets/Data/Old_Computer_Normal.edds"
+ BentNormalPower 2.408
+ BentNormalAOIntensity 0
+ BentNormalDetail 0.408
+ GlobalMCRMap "{10B3D62634B13339}Assets/Data/Old_Computer_BaseColor.edds"
+ GlobalMCRMode Multiply
+ UseGlobAOOnly 1
+ GlobalAOMap "{5A763AF833718F85}Assets/Data/Old_Computer_AO.edds"
+ NMO_1 "{5A763AF833718F85}Assets/Data/Old_Computer_AO.edds"
+ DetNormal_1 0
+ Roughness_1 0
+ Metalness_1 0
+ AO_1 0.365
+}
