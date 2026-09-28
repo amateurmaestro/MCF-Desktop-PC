@@ -5,6 +5,7 @@ MatPBRMulti {
  BentNormalPower 2.408
  BentNormalAOIntensity 0
  BentNormalDetail 0.408
+ DirtOpacity 3
  GlobalMCRMap "{10B3D62634B13339}Assets/Data/Old_Computer_BaseColor.edds"
  GlobalMCRMode Multiply
  UseGlobAOOnly 1

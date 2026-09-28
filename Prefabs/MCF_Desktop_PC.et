@@ -3,35 +3,66 @@ GenericEntity {
  components {
   MCF_Devices_LockComponent "{6A7816BE797700AD}" {
    m_bSecured 0
+   m_sBreakInVerb "Break in"
+  }
+  MCF_Devices_StowChildrenComponent "{6A783C61CB48257E}" {
   }
   MCF_Intel_CarrierComponent "{6A776149881E023E}" {
    m_sDeviceName "Desktop Computer"
    m_eView LAPTOP
    m_sActionVerb "Use"
+   m_sProfileId "field_laptop"
   }
   MeshObject "{6A7761486D2D4AA0}" {
    Object "{68DFB6B68A281A6A}Assets/Old-Computer.xob"
   }
+  RigidBody "{6A783C6590FC21BB}" {
+   ResponseIndex "SmallMomentum"
+   Geometries {
+    PhysicsBoxGeometry pc {
+     Layers 0x2 0
+     Offset -0.11 0.171 0.091
+     Extents 0.3 0.5 0.3
+    }
+   }
+   Static 1
+  }
   SCR_EditableEntityComponent "{6A7816BDE98EF8E6}" {
    m_UIInfo SCR_EditableEntityUIInfo "{6A7816B707DB1179}" {
     Name "PC-Training (Spagistan)"
-    Icon "{35591EAEA460956A}UI/Textures/EditorPreviews/MCF_preview_intel.edds"
+    m_Image "{35591EAEA460956A}UI/Textures/EditorPreviews/MCF_preview_intel.edds"
     m_sFaction "SPAG"
     m_aAuthoredLabels {
      ENTITYTYPE_OBJECT CONTENT_MODDED
     }
    }
+   m_bAutoRegister ALWAYS
    m_Flags 769
   }
   ActionsManagerComponent "{6A7816BC3F39F1CC}" {
+   ActionContexts {
+    UserActionContext "{6A783C67A5BE6AA7}" {
+     ContextName "default"
+     Position PointInfo "{6A783C67855D237C}" {
+     }
+     Radius 6
+    }
+   }
    additionalActions {
     MCF_Intel_ReadAction "{6A7816BDCB98E342}" {
-     ActionTitle "Use computer"
-     VisibilityRange 0.4
-     Duration 1
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{6A783C649FA0F5A4}" {
+      Name "#MCF-Action_Use"
+     }
+     VisibilityRange 3
+     Duration 2
     }
    }
   }
+  RplComponent "{6A783C65C9B28462}" {
+  }
  }
- coords 2.89 3.625 3.196
+ coords 0 0.222 0
 }

@@ -1,9 +1,26 @@
 MatPBRBasic {
- EmissiveLV 0.427
- EmissiveAbsoluteLV 0
- BCRMap "{D401B292E2E9B242}Assets/Props/Intel/Laptop/Data/Laptop_Screen_BCR.edds"
+ Emissive 0.001 0 1 0
+ EmissiveLV -5.224
+ VFXMap "{C1947960F3FBA3E3}Assets/Decals/Dirt/Impacts/Data/Decal_Impact_Dirt_BCR.edds"
+ RoughnessScale 0.314
+ DirtOpacity 1.31
+ DirtLayerSharpness 3.85
+ DirtColor 0.216 0.168 0.148 1
+ DirtRoughness 0.717
+ DirtBCRMap "{C1947960F3FBA3E3}Assets/Decals/Dirt/Impacts/Data/Decal_Impact_Dirt_BCR.edds"
+ DirtUVTransform MatUVTransform "{6A78526102F443C7}" {
+  TilingU 0.3
+  TilingV 0.3
+  OffsetU -0.326
+  OffsetV -0.079
+ }
+ BCRMap "{D26D9257A130E6AA}Assets/Data/Old_Computer_Emissive.edds"
+ NormalPower 0.151
+ NMOMap "{1B7EB2580B7412F0}Assets/_SharedData/DetailMask/ST_Smudge_01_Mask1.edds"
  GlobalMapsUVTransform MatUVTransform "{6A7816B24C197363}" {
-  TilingU 6.5
-  TilingV 6.5
+  TilingU 2.2
+  TilingV 2.2
+  OffsetV 0.776
+  Rotation 180
  }
 }
