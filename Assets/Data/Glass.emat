@@ -3,7 +3,7 @@ MatPBRBasic {
  EmissiveLV -5.224
  VFXMap "{C1947960F3FBA3E3}Assets/Decals/Dirt/Impacts/Data/Decal_Impact_Dirt_BCR.edds"
  RoughnessScale 0.314
- DirtOpacity 1.31
+ DirtOpacity 1
  DirtLayerSharpness 3.85
  DirtColor 0.216 0.168 0.148 1
  DirtRoughness 0.717

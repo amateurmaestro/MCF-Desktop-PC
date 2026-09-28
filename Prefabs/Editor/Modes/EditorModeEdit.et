@@ -5,7 +5,7 @@ SCR_EditorModeEntity : "{E56F54E533ACE527}Prefabs/Editor/Modes/EditorModeBase.et
    m_Registries {
     SCR_PlaceableEntitiesRegistry "{6A51700F8823FEB7}" {
      m_Prefabs + {
-      "{30A73730E8D9EF2E}Prefabs/MCF_Desktop_PC.et"
+      "{28927F9DD7C67788}Prefabs/MCF_Old_PC.et"
      }
     }
    }
